@@ -1,0 +1,40 @@
+//seletor{propriedades: valor}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+header {
+  background-color: red;
+  //tag da pagina (fundo)  
+  color: white
+  //cores da letra
+}
+<section>
+   background-color: white;
+   
+.card{
+  background:purple;
+border: solid;
+height: 80px;
+width:80px ;
+
+img{
+  width: 80px;
+  height:90px;
+}
+.subtitulo{
+  color: grey;
+
+  }
+}
+#btn1{
+  background-color: blue;
+  color:white
+}
+#btn2{
+  background-color: yellow;
+  color: white;
+}
