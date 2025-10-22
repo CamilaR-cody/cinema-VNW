@@ -1,40 +1,171 @@
-//seletor{propriedades: valor}
+//Estrutura seletor{ propriedade:valor;
 
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
+/*
+Seletor universal - aplica a todos os elementos da pagina
+Remove margens e espaçamentos padrão e define o box-sizing para facilitar o controle de tamanhos
+*/
+* {
+    margin: 0; //Remove nargens externas/
+    padding: 0;//Remove espaçamento interno/
+    box-sizing: border-box;//inclui borda e padding dentro da largura e altura definidos/
+    font-size: 16px;/*Define o tamanho da donte da pagina - 1rem = 16px */
+    // 1rem = 16px
+  
 }
 
+/*
+Estiliza o elemento <header>
+Define o fundo vermelho e o texto branco
+*/
 header {
-  background-color: red;
-  //tag da pagina (fundo)  
-  color: white
-  //cores da letra
-}
-<section>
-   background-color: white;
-   
-.card{
-  background:purple;
-border: solid;
-height: 80px;
-width:80px ;
+    background-color: rgb(204, 111, 158);//cor de fundo  em rgb/
+    color: white;/*Cor do texto */
+    font-family: "open sans", sans-serif;
+    display: flex;//Usa o flexbox para organizar o conteudo em linha/
+    justify-content: space-between;//espaça os elementos: titulo a esquerda e menu a direita/
+    align-items: center;//Centraliza verticalmente os itens dentro do header/
+    padding: 20px;//Espaçamento interno para dar "respiro"/
 
-img{
-  width: 80px;
-  height:90px;
+    li {
+        font-weight:200;//Define o peso da fonte mais leve nos itens  do menu/
+    }
 }
-.subtitulo{
-  color: grey;
+
+ul {
+    display: flex;//Coloca itens do menu lado a lado/
+    justify-content: space-around;/* Distribui o espaço igualmente entre os itens */
+    width: 40vw;//Define a largura do menu como 40%  d alargura  da tela/
+    list-style: none;//Remove a s bolinhas padrão da lista/
+}
+
+/*
+Estiliza as seções da pagina
+*/
+.boxcard {
+    background: rgb(51, 22, 51);//cor de fundo cinza/
+    display: flex;//Organiza ps cards lado a lado/
+    justify-content: space-evenly;/*Distribui espaço igual entre os card */
+    padding: 50px;//Cria espaçamento interno em toa a seção/
+}
+
+/*
+classe card - usada para criar um "cartão" visual
+*/
+// .card {
+//     background-color: pink;/* fundo rosa*/
+//     //  border: solid; /* Borda solida ( usa cor padrão do navegador)*/
+//     // height: 150px;/altura fixa de 150px/
+//     // width: 150px;/largura fixa de 150px/
+//     height: 50vh;
+//     width: 25vw;
+//     display: flex;//Usa flexbox para alinhar o conteudo dentro do card/
+//     flex-direction:column;//organiza o conteudo verticalmente/
+//     align-items: center;//centraliza horizontalmente os elementos/
+//     justify-content: space-between;//Distribui o espaço entre imagens, titulo e botão/
+//     border: solid;//Adiciona uma borda simples ao redor do card/
+
+// /*
+// Estiliza imagem dentro do .card
+// */
+// img {
+//     width: 100%;
+//     height: 70%;
+// }
+
+// /*
+// Estiliza elementos com a classe .subtitulo  dentro do .card 
+// */
+// .subtitulo {
+//     color: rgb(24, 22, 24);//cor do texto cinza do subtitulo do filme/
+//     font-size: 2rem;//Tamanho grande para dar ênfase ao titulo do filme/
+//    }
+// }
+.card {
+
+  background: black; /* Fundo rosa */
+
+  // border: solid; /* Borda sólida (usa cor padrão do navegador) */
+
+  // height: 150px; /* Altura fixa de 150px */
+
+  // width: 150px; /* Largura fixa de 150px */
+
+  height: 50vh;
+
+  width: 25vw;
+
+  display: flex; /* Usa Flexbox para alinhar o conteúdo dentro do card */
+
+  flex-direction: column; /* Organiza o conteúdo verticalmente */
+
+  align-items: center; /* Centraliza horizontalmente os elementos */
+
+  justify-content: space-between; /* Distribui o espaço entre imagem, título e botão */
+
+  border: solid; /* Adiciona uma borda simples ao redor do card */
+
+  /*
+
+     Estiliza imagens dentro do .card
+
+    */
+
+  img {
+
+    width: 100%; /* Largura da imagem */
+
+    height: 70vh; /* Altura da imagem */
 
   }
+
+  /*
+
+     Estiliza elementos com a classe .subtitulo dentro do .card
+
+    */
+
+  .subtitulo {
+
+    color: rgb(175, 7, 7); /* Cor vermelha para destacar o nome do filme */
+
+    font-size: 2rem; /* Tamanho grande para dar ênfase ao título do filme */
+
+  }
+
 }
+
+/*
+Botão com ID #btn1 - provavelmente um botão azul
+*/
 #btn1{
-  background-color: blue;
-  color:white
+   background-color: palevioletred;
+    color: white;//texto branco/
+    font-size: 1.2rem;
+    padding: 0.5rem;//Espaçamento interno- aumenta a rea clicavel/
+    margin: 15px;//Espaçamento externo entre o botão e outros elementos/
 }
-#btn2{
-  background-color: yellow;
-  color: white;
+
+#btn2 {
+    background-color:palevioletred;
+    color: white;
+    font-size: 1.0rem;
+    padding: 0.5rem;
+    margin:15px;                                                                                                                                                       
+}
+
+#btn3{
+    background-color:palevioletred;
+    color: white;
+    font-size: 1.0rem;
+    padding: 0.5rem;
+    margin:15px;                                                                                                                                                       
+}
+
+.cine{
+    height: 50vh;//Ocupa metade de altura da tela do navegador
+    background-image: url("https://secure.cdn1.wdpromedia.com/dam/disney-world/disneplus/DisneyPlus_Header_WDW_1280x720-pixiedust.jpg");
+    background-position: center;/*Centraliza a imagem */
+    background-repeat: no-repeat;//Impede que a imagem se repita no espaço locado/
+    background-size: cover;//Faz a imagem cobrir toda a area da seção/
+
 }

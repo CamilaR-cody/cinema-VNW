@@ -1,14 +1,112 @@
+@charset "UTF-8";
+/*
+Seletor universal - aplica a todos os elementos da pagina
+Remove margens e espaçamentos padrão e define o box-sizing para facilitar o controle de tamanhos
+*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 16px; /*Define o tamanho da donte da pagina - 1rem = 16px */
 }
 
+/*
+Estiliza o elemento <header>
+Define o fundo vermelho e o texto branco
+*/
 header {
-  background-color: red;
-  color: white;
+  background-color: rgb(204, 111, 158);
+  color: white; /*Cor do texto */
+  font-family: "open sans", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header li {
+  font-weight: 200;
 }
 
+ul {
+  display: flex;
+  justify-content: space-around; /* Distribui o espaço igualmente entre os itens */
+  width: 40vw;
+  list-style: none;
+}
+
+/*
+Estiliza as seções da pagina
+*/
+.boxcard {
+  background: rgb(51, 22, 51);
+  display: flex;
+  justify-content: space-evenly; /*Distribui espaço igual entre os card */
+  padding: 50px;
+}
+
+/*
+classe card - usada para criar um "cartão" visual
+*/
 .card {
-  border: solid;
+  background: black; /* Fundo rosa */
+  height: 50vh;
+  width: 25vw;
+  display: flex; /* Usa Flexbox para alinhar o conteúdo dentro do card */
+  flex-direction: column; /* Organiza o conteúdo verticalmente */
+  align-items: center; /* Centraliza horizontalmente os elementos */
+  justify-content: space-between; /* Distribui o espaço entre imagem, título e botão */
+  border: solid; /* Adiciona uma borda simples ao redor do card */
+  /*
+
+     Estiliza imagens dentro do .card
+
+    */
+  /*
+
+     Estiliza elementos com a classe .subtitulo dentro do .card
+
+    */
+}
+.card img {
+  width: 100%; /* Largura da imagem */
+  height: 70vh; /* Altura da imagem */
+}
+.card .subtitulo {
+  color: rgb(175, 7, 7); /* Cor vermelha para destacar o nome do filme */
+  font-size: 2rem; /* Tamanho grande para dar ênfase ao título do filme */
+}
+
+/*
+Botão com ID #btn1 - provavelmente um botão azul
+*/
+#btn1 {
+  background-color: palevioletred;
+  color: white;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  margin: 15px;
+}
+
+#btn2 {
+  background-color: palevioletred;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 15px;
+}
+
+#btn3 {
+  background-color: palevioletred;
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 15px;
+}
+
+.cine {
+  height: 50vh;
+  background-image: url("https://secure.cdn1.wdpromedia.com/dam/disney-world/disneplus/DisneyPlus_Header_WDW_1280x720-pixiedust.jpg");
+  background-position: center; /*Centraliza a imagem */
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */

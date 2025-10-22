@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vnw Flix</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-
+<head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Dajujuh</title>
+    <link rel="shortcut icon" href="favicon_io (1)/cinema.ico" type="image/x-icon">
+     <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
     <header>
-      
-      <h1>Cinema</h1>
-      <ul>
-        <li>Inicio</li>
-        <li>Filmes</li>
-        <li>Series</li>
-      </ul>
-      
-    </header>
+        <h1>Cinema</h1>
+            <ul>
+                <li>Inicio</li>
+                <li>filmes</li>
+                <li>series</li>
+            </ul>
+        </header>
     <main>
-      <section>
-        <div class="card">
-          <img src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/96c13b77-02f7-457a-a66a-a472d18c635b/compose?aspectRatio=1.78&format=webp&width=1200" alt="Filme Piratas do caribe">
-          <h3 
-          class="subtitulo">Piratas do caribe</h3>
-        </div>
-        <div class="card">
-          <img src="https://static.wikia.nocookie.net/velozes-e-furiosos/images/a/aa/Velozes_e_Furiosos_-_Capa.jpg/revision/latest/thumbnail/width/360/height/360?cb=20180305235641&path-prefix=pt-br" alt="Velozes e furiosos 1">
-          <h3 class="subtitulo">Velozes e Furiosos</h3>
-          <button id="brn2"></button>
+        <!--Conteudo principal da pagina-->
+        <section class="cine">
+<!--seção que agrupa os cartões de filmes-->
+        </section>
+        <section class="boxcard">
 
+            <div class="card">
+            <img 
+            src="https://m.media-amazon.com/images/I/81Rw6OtXI0L._UF894,1000_QL80_.jpg" 
+            alt="filme Branca de neve"
+             />
+            <!--Imagem do filme com descrição alternativa-->
+                <h3 class="subtitulo">Branca de neve</h3>
+                <!--Subtitulo com o nome do filme-->
+                <button id="btn1">Entrar no filme</button>
+                <!--Botão com id especifico para aplicar estilos-->
+            </div>
 
-        </div>
+            <div class="card">
+               <img 
+               src="https://lumiere-a.akamaihd.net/v1/images/cg_encanto_disney_mobile_22332_51e9b27e.jpeg?region=0,32,1024,576&width=960"  
+               alt="fime encanto"
+               />
+               <h3 class="subtitulo">Encanto</h3>
+               <button id="btn2">Entrar no filme</button>
+            </div>
 
-      </section>
-
-    </main>
+            <div class="card">
+                <img
+                src="https://upload.wikimedia.org/wikipedia/pt/4/46/Moana_movie_poster_p_2016.jpg"
+                alt="Filme Moana-Um Mar de aventuras"
+                />
+                <h3 class="subtitulo">Moana</h3>
+                <button id="btn3">Entrar no filme</button>
+                </div>
+        </section>
+    </main>  
   </body>
 </html>
